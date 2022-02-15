@@ -8,7 +8,7 @@ public void draw(){
 }
 public void myFractal(int x, int y, int siz){
   fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
-  circle(x,y,siz);
+  ellipse(x,y,siz,siz);
   if(siz > 10){ //siz <= 10 base case, no recursion
     myFractal(x+siz/2,y-siz/2,siz/2);
     myFractal(x-siz/2,y+siz/2,siz/2);
